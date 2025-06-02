@@ -9,9 +9,34 @@ fruits.append("mango")
 
 print(fruits)
 print(fruits[2])
-print(fruits[-2]) #it started bidirection also
+print(fruits[-2]) #it started bidirection also with negative index
 print(fruits[-3])
 
+my_list1 = [1, "a", True, 3.14]
+print(type(my_list1))
+
+my_list2 = [1, [4,5], True]
+print(type(my_list2))
+
+#slicing
+print(my_list1[:2])
+print(my_list1[:])
+
+#creating list of squre..
+squares = [x**2 for x in range(1, 6)]
+print("Square lis is = ", squares)
+
+# iteration
+
+for fruite in fruits:
+    print(fruite)
+
+# using while
+
+index = 0
+while index < len(fruits):
+    print(fruits[index])
+    index+=1
 
 # 2. Tuple (Ordered, Immutable, Allows Duplicates)
 # use round () brackets to define Tuples
